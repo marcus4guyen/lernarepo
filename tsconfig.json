@@ -17,7 +17,21 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "button": [
+        "dist/button"
+      ],
+      "button/*": [
+        "dist/button/*"
+      ],
+      "stepper": [
+        "dist/stepper"
+      ],
+      "stepper/*": [
+        "dist/stepper/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
