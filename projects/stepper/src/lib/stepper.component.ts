@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'lib-stepper',
   template: `
     <p>
-      Stepper works!
+      Stepper works!!!
     </p>
   `,
   styles: []
