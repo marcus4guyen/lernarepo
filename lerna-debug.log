@@ -1,4 +1,6 @@
 0 silly argv { _: [ 'version' ],
+0 silly argv   'conventional-commits': true,
+0 silly argv   conventionalCommits: true,
 0 silly argv   lernaVersion: '3.16.4',
 0 silly argv   '$0':
 0 silly argv    '..\\..\\..\\..\\AppData\\Roaming\\npm\\node_modules\\lerna\\cli.js' }
@@ -13,72 +15,98 @@
 9 silly isBehindUpstream
 10 silly isBehindUpstream master is behind origin/master by 0 commit(s) and ahead by 1
 11 silly hasTags
-12 verbose hasTags false
-13 info Assuming all packages changed
-14 verbose updated button
-15 verbose updated stepper
-16 verbose git-describe undefined => "9080840"
-17 silly git-describe parsed => {"refCount":"4","sha":"9080840","isDirty":false}
-18 silly independent for button at C:\Users\tuana\Documents\Projects\Monorepo\lernarepo\projects\button
-19 verbose getChangelogConfig using preset "conventional-changelog-angular"
-20 silly npa Result {
-20 silly npa   type: 'tag',
-20 silly npa   registry: true,
-20 silly npa   where: undefined,
-20 silly npa   raw: 'conventional-changelog-angular',
-20 silly npa   name: 'conventional-changelog-angular',
-20 silly npa   escapedName: 'conventional-changelog-angular',
-20 silly npa   scope: undefined,
-20 silly npa   rawSpec: '',
-20 silly npa   saveSpec: null,
-20 silly npa   fetchSpec: 'latest',
-20 silly npa   gitRange: undefined,
-20 silly npa   gitCommittish: undefined,
-20 silly npa   hosted: undefined }
-21 verbose getChangelogConfig Attempting to resolve preset "conventional-changelog-angular"
-22 info getChangelogConfig Successfully resolved preset "conventional-changelog-angular"
-23 verbose independent increment 0.0.1 by patch
-24 silly independent for stepper at C:\Users\tuana\Documents\Projects\Monorepo\lernarepo\projects\stepper
-25 verbose independent increment 0.0.1 by patch
-26 info execute Skipping releases
-27 silly lifecycle No script for "preversion" in "lernarepo", continuing
-28 silly lifecycle No script for "preversion" in "button", continuing
-29 silly lifecycle No script for "preversion" in "stepper", continuing
-30 silly lifecycle No script for "version" in "button", continuing
-31 silly independent for button at C:\Users\tuana\Documents\Projects\Monorepo\lernarepo\projects\button
-32 silly lifecycle No script for "version" in "stepper", continuing
-33 silly independent for stepper at C:\Users\tuana\Documents\Projects\Monorepo\lernarepo\projects\stepper
-34 silly independent writing new entry: "## 0.0.2 (2019-09-04)\n\n**Note:** Version bump only for package button\n\n\n\n"
-35 silly independent writing new entry: "## 0.0.2 (2019-09-04)\n\n**Note:** Version bump only for package stepper\n\n\n\n"
-36 verbose independent wrote C:\Users\tuana\Documents\Projects\Monorepo\lernarepo\projects\button\CHANGELOG.md
-37 verbose independent wrote C:\Users\tuana\Documents\Projects\Monorepo\lernarepo\projects\stepper\CHANGELOG.md
+12 verbose hasTags true
+13 silly git-describe.sync "input@0.1.0-1-g893db6d" => {"lastTagName":"input@0.1.0","lastVersion":"0.1.0","refCount":"1","sha":"893db6d","isDirty":false}
+14 info Looking for changed packages since input@0.1.0
+15 silly checking diff projects/button
+16 silly no diff found in button
+17 silly checking diff projects/input
+18 silly found diff in projects/input/node_modules/button/CHANGELOG.md
+18 silly found diff in projects/input/node_modules/button/README.md
+18 silly found diff in projects/input/node_modules/button/karma.conf.js
+18 silly found diff in projects/input/node_modules/button/ng-package.json
+18 silly found diff in projects/input/node_modules/button/package.json
+18 silly found diff in projects/input/node_modules/button/src/lib/button.component.spec.ts
+18 silly found diff in projects/input/node_modules/button/src/lib/button.component.ts
+18 silly found diff in projects/input/node_modules/button/src/lib/button.module.ts
+18 silly found diff in projects/input/node_modules/button/src/lib/button.service.spec.ts
+18 silly found diff in projects/input/node_modules/button/src/lib/button.service.ts
+18 silly found diff in projects/input/node_modules/button/src/public-api.ts
+18 silly found diff in projects/input/node_modules/button/src/test.ts
+18 silly found diff in projects/input/node_modules/button/tsconfig.lib.json
+18 silly found diff in projects/input/node_modules/button/tsconfig.lib.prod.json
+18 silly found diff in projects/input/node_modules/button/tsconfig.spec.json
+18 silly found diff in projects/input/node_modules/button/tslint.json
+18 silly found diff in projects/input/package.json
+19 verbose filtered diff [ 'projects/input/node_modules/button/CHANGELOG.md',
+19 verbose filtered diff   'projects/input/node_modules/button/README.md',
+19 verbose filtered diff   'projects/input/node_modules/button/karma.conf.js',
+19 verbose filtered diff   'projects/input/node_modules/button/ng-package.json',
+19 verbose filtered diff   'projects/input/node_modules/button/package.json',
+19 verbose filtered diff   'projects/input/node_modules/button/src/lib/button.component.spec.ts',
+19 verbose filtered diff   'projects/input/node_modules/button/src/lib/button.component.ts',
+19 verbose filtered diff   'projects/input/node_modules/button/src/lib/button.module.ts',
+19 verbose filtered diff   'projects/input/node_modules/button/src/lib/button.service.spec.ts',
+19 verbose filtered diff   'projects/input/node_modules/button/src/lib/button.service.ts',
+19 verbose filtered diff   'projects/input/node_modules/button/src/public-api.ts',
+19 verbose filtered diff   'projects/input/node_modules/button/src/test.ts',
+19 verbose filtered diff   'projects/input/node_modules/button/tsconfig.lib.json',
+19 verbose filtered diff   'projects/input/node_modules/button/tsconfig.lib.prod.json',
+19 verbose filtered diff   'projects/input/node_modules/button/tsconfig.spec.json',
+19 verbose filtered diff   'projects/input/node_modules/button/tslint.json',
+19 verbose filtered diff   'projects/input/package.json' ]
+20 silly checking diff projects/stepper
+21 silly no diff found in stepper
+22 verbose updated input
+23 verbose git-describe undefined => "input@0.1.0-1-g893db6d"
+24 silly git-describe parsed => {"lastTagName":"input@0.1.0","lastVersion":"0.1.0","refCount":"1","sha":"893db6d","isDirty":false}
+25 silly independent for input at C:\Users\tuana\Documents\Projects\Monorepo\lernarepo\projects\input
+26 verbose getChangelogConfig using preset "conventional-changelog-angular"
+27 silly npa Result {
+27 silly npa   type: 'tag',
+27 silly npa   registry: true,
+27 silly npa   where: undefined,
+27 silly npa   raw: 'conventional-changelog-angular',
+27 silly npa   name: 'conventional-changelog-angular',
+27 silly npa   escapedName: 'conventional-changelog-angular',
+27 silly npa   scope: undefined,
+27 silly npa   rawSpec: '',
+27 silly npa   saveSpec: null,
+27 silly npa   fetchSpec: 'latest',
+27 silly npa   gitRange: undefined,
+27 silly npa   gitCommittish: undefined,
+27 silly npa   hosted: undefined }
+28 verbose getChangelogConfig Attempting to resolve preset "conventional-changelog-angular"
+29 info getChangelogConfig Successfully resolved preset "conventional-changelog-angular"
+30 verbose independent increment 0.1.0 by patch
+31 info execute Skipping releases
+32 silly lifecycle No script for "preversion" in "lernarepo", continuing
+33 silly lifecycle No script for "preversion" in "input", continuing
+34 silly lifecycle No script for "version" in "input", continuing
+35 silly independent for input at C:\Users\tuana\Documents\Projects\Monorepo\lernarepo\projects\input
+36 silly independent writing new entry: "## [0.1.1](https://github.com/marcus4guyen/lernarepo/compare/input@0.1.0...input@0.1.1) (2019-09-04)\n\n**Note:** Version bump only for package input\n\n\n\n"
+37 verbose independent wrote C:\Users\tuana\Documents\Projects\Monorepo\lernarepo\projects\input\CHANGELOG.md
 38 silly lifecycle No script for "version" in "lernarepo", continuing
-39 silly gitAdd [ 'C:\\Users\\tuana\\Documents\\Projects\\Monorepo\\lernarepo\\projects\\button\\package.json',
-39 silly gitAdd   'C:\\Users\\tuana\\Documents\\Projects\\Monorepo\\lernarepo\\projects\\stepper\\package.json',
-39 silly gitAdd   'C:\\Users\\tuana\\Documents\\Projects\\Monorepo\\lernarepo\\projects\\button\\CHANGELOG.md',
-39 silly gitAdd   'C:\\Users\\tuana\\Documents\\Projects\\Monorepo\\lernarepo\\projects\\stepper\\CHANGELOG.md' ]
+39 silly gitAdd [ 'C:\\Users\\tuana\\Documents\\Projects\\Monorepo\\lernarepo\\projects\\input\\package.json',
+39 silly gitAdd   'C:\\Users\\tuana\\Documents\\Projects\\Monorepo\\lernarepo\\projects\\input\\CHANGELOG.md' ]
 40 silly gitCommit chore(release): release
 40 silly gitCommit
-40 silly gitCommit  - button@0.0.2
-40 silly gitCommit  - stepper@0.0.2
+40 silly gitCommit  - input@0.1.1
 41 verbose git [ 'commit',
 41 verbose git   '-F',
-41 verbose git   'C:\\Users\\tuana\\AppData\\Local\\Temp\\e3ba8c6d-7e5c-4bc1-b82d-df00b8ed0cc6\\lerna-commit.txt' ]
-42 silly gitTag button@0.0.2
-43 verbose git [ 'tag', 'button@0.0.2', '-m', 'button@0.0.2' ]
-44 silly gitTag stepper@0.0.2
-45 verbose git [ 'tag', 'stepper@0.0.2', '-m', 'stepper@0.0.2' ]
-46 silly lifecycle No script for "postversion" in "button", continuing
-47 silly lifecycle No script for "postversion" in "stepper", continuing
-48 silly lifecycle No script for "postversion" in "lernarepo", continuing
-49 info git Pushing tags...
-50 silly gitPush origin master
-51 error Error: Command failed: git push --follow-tags --no-verify origin master
-51 error fatal: HttpRequestException encountered.
-51 error    An error occurred while sending the request.
-51 error bash: /dev/tty: No such device or address
-51 error error: failed to execute prompt script (exit code 1)
-51 error fatal: could not read Username for 'https://github.com': No error
-51 error
-51 error     at makeError (C:\Users\tuana\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:174:9)
-51 error     at Promise.all.then.arr (C:\Users\tuana\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:278:16)
+41 verbose git   'C:\\Users\\tuana\\AppData\\Local\\Temp\\35366582-955c-4747-ade2-9a5e868d9e74\\lerna-commit.txt' ]
+42 silly gitTag input@0.1.1
+43 verbose git [ 'tag', 'input@0.1.1', '-m', 'input@0.1.1' ]
+44 silly lifecycle No script for "postversion" in "input", continuing
+45 silly lifecycle No script for "postversion" in "lernarepo", continuing
+46 info git Pushing tags...
+47 silly gitPush origin master
+48 error Error: Command failed: git push --follow-tags --no-verify origin master
+48 error fatal: HttpRequestException encountered.
+48 error    An error occurred while sending the request.
+48 error bash: /dev/tty: No such device or address
+48 error error: failed to execute prompt script (exit code 1)
+48 error fatal: could not read Username for 'https://github.com': No error
+48 error
+48 error     at makeError (C:\Users\tuana\Documents\Projects\Monorepo\lernarepo\node_modules\execa\index.js:174:9)
+48 error     at Promise.all.then.arr (C:\Users\tuana\Documents\Projects\Monorepo\lernarepo\node_modules\execa\index.js:278:16)
