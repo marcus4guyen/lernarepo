@@ -30,6 +30,12 @@
       ],
       "stepper/*": [
         "dist/stepper/*"
+      ],
+      "input": [
+        "dist/input"
+      ],
+      "input/*": [
+        "dist/input/*"
       ]
     }
   },
