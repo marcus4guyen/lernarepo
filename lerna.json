@@ -5,11 +5,10 @@
   "version": "independent",
   "command": {
       "publish": {
-          "conventionalCommits": true,
-          "message": "chore(release): release"
+          "conventionalCommits": true
       },
       "version": {
-          "push": false
+        "message": "chore(release): release"
       }
   }
 }
