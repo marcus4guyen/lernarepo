@@ -1,12 +1,12 @@
 {
   "name": "input",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "peerDependencies": {
     "@angular/common": "^9.0.0-next.4",
     "@angular/core": "^9.0.0-next.4"
   },
   "gitHead": "597d39411cedbbb559c32499d7909a4ef8cabfd9",
   "dependencies": {
-    "button": "^0.0.3"
+    "button": "^0.0.4"
   }
 }
