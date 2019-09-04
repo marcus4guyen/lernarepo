@@ -36,6 +36,12 @@
       ],
       "input/*": [
         "dist/input/*"
+      ],
+      "table": [
+        "dist/table"
+      ],
+      "table/*": [
+        "dist/table/*"
       ]
     }
   },
